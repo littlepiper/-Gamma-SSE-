@@ -1,5 +1,5 @@
 clear;clc;
-a = imread('D:/autocruis/Gamma/zIMG_1.jpg');
+a = imread('zIMG_1.jpg');
 a_hsv = rgb2hsv(a);
 imagey = a_hsv(:,:,3);
 
