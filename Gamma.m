@@ -8,9 +8,9 @@ b = a;
 mask = a;
 gamma = zeros(r,c,m);
 mask(:) = 255 - a(:);
-sigma1 = 20;           %高斯正态分布标准差
-gausFilter = fspecial('gaussian',[5 5],sigma1);   %高斯滤波
-mask = imfilter(mask,gausFilter,'replicate');     %平滑处理
+sigma1 = 20;
+gausFilter = fspecial('gaussian',[5 5],sigma1);
+mask = imfilter(mask,gausFilter,'replicate');
 
 mask = double(mask)/255;
 gamma(:) = power( 2, (128 - double(mask(:)*255)) /128.0 );
