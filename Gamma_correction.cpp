@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	cv::Mat image_in = cv::imread("D:/autocruis/Gamma/IMG_1.jpg");
+	cv::Mat image_in = cv::imread("IMG_1.jpg");
 
 	int r = image_in.rows;
 	int c = image_in.cols;
